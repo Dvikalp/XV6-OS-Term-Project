@@ -1,0 +1,12 @@
+1: Write "#define SYS_history 22" in syscall.h.
+2: Write "[SYS_history] sys_history" in syscall.c.
+3: Write "extern int sys_history(void);" in syscall.c.
+4: Implementing system call function in sysproc.c that will take the buffer and historyId from sys_history and will pass it to the history function.And then add "SYSCALL(history)" in usys.S.
+5: Adding "int history(char *,int);" in user.h and defs.h.
+6: Creating "console.h" header file.
+7: Including "console.h" in console.c.
+8: Now defining every functions of "console.h" in console.c.
+9: Including "console.h" in sh.c.
+10: Writing defination of "printHistory()" functions in sh.c and taking its command in "int main()" also making changes in "void consoleinit(void)" and taking a "history" command in main.
+
+

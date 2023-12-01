@@ -1,0 +1,14 @@
+1: Write "#define SYS_wait2 22" in syscall.h.
+2: Write "[SYS_wait2] sys_wait2" in syscall.c.
+3: Write "extern int sys_wait2(void);" in syscall.c.
+4: Modifying "struct proc" and adding "void updatestatistics();" function in proc.h.
+5: Defining "void updatestatistics();" in proc.c.
+6: Calling the "updatestatistics()" in trap.c.
+7: Implementing system call function in sysproc.c that will take the retime , rutime and stime from sys_wait2 .And then add "SYSCALL(wait2)" in usys.S.
+8: Adding "int wait2(int *,int *,int *);" in user.h and defs.h.
+9: Modifying "int main()" of sh.c.
+10: Setting ctime of a processes in proc.c
+11: Adding "_wait2\" in Makefile.
+
+
+

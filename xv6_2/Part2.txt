@@ -1,0 +1,10 @@
+~ First added defination and system call number of new system call in syscall.h
+~ Then added pointer and extern declaration of sys_getprocinfo in syscall.c
+~ Defined struct uproc in stat.h
+~ Implemented sys_getprocinfo in sysproc.c that gets process info from kernel and included stat.h file for struct uproc
+~ Defined the helper function in proc.h and Implemented in proc.c 
+~ Added user level interface of getprocinfo system call and included stat.h file to get access of struct uproc in user.h
+~ Defined assembly instruction for new system call in usys.S 
+~ Implemented user level program to call new system call in ps.c
+~ Added _ps to the UPROGS defination in Makefile 
+
